@@ -1,0 +1,31 @@
+.title {
+    color: blue;
+    background-color: blueviolet;
+    text-transform: uppercase;
+}
+.title2 {
+    text-align: center;
+}
+span {
+    background-color: black;
+    color: white;
+    font-size: larger;
+}
+p {
+    font-size: large;
+}
+.bg-blueviolet {
+    background: blueviolet;
+}
+.content2 p {
+    text-align: center;
+}
+.content3 p {
+    background: palevioletred;
+}
+footer h1{
+    color: red;
+    text-align: center;
+    background-color: pink;
+    text-transform: uppercase;
+}
