@@ -1,0 +1,14 @@
+@import './Abstracts/_variables.css';
+@import './Base/_base.css';
+@import './Base/_anmations.css';
+@import './Components/_buttons.css';
+@import './Layout/_header.css';
+@import './Layout/_content.css';
+@import './Layout/_navbar.css';
+@import './Components/_card.css';
+@import './Components/_backtotop.css';
+@import './Components/_dark-night.css';
+@import './Layout/_footer.css';
+@import './Components/_slide.css';
+@import './Components/_PortfolioFilterGallery.css';
+@import './Components/_textAnimate.css';
