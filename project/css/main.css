@@ -1,4 +1,4 @@
-@import './Abstracts/_variables.css';
+/* @import './Abstracts/_variables.css';
 @import './Base/_base.css';
 @import './Base/_anmations.css';
 @import './Components/_buttons.css';
@@ -11,4 +11,18 @@
 @import './Layout/_footer.css';
 @import './Components/_slide.css';
 @import './Components/_PortfolioFilterGallery.css';
-@import './Components/_textAnimate.css';
+@import './Components/_textAnimate.css'; */
+@import '_variables.css';
+@import '_base.css';
+@import '_anmations.css';
+@import '_buttons.css';
+@import '_header.css';
+@import '_content.css';
+@import '_navbar.css';
+@import '_card.css';
+@import '_backtotop.css';
+@import '_dark-night.css';
+@import '_footer.css';
+@import '_slide.css';
+@import '_PortfolioFilterGallery.css';
+@import '_textAnimate.css';

@@ -1,0 +1,66 @@
+
+.menu {
+    display: flex;
+    background-color: #DB1A5B;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-shadow: 5px 0px 10px black,
+                5px 0px 20px rebeccapurple;
+}
+
+.menu > li {
+    list-style: none;
+    padding: 20px;
+    position: relative;
+    transition: .5s;
+}
+
+.menu > li > img{
+    height: 20px;
+}
+
+.menu > li > a{
+    text-decoration: none;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.menu > li:hover {
+    background-color:#E2487C;
+}
+
+.menu > li .sub__menu {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0px;
+    background-color:  #DB1A5B;   
+    list-style: none;
+    transition: .4s;
+}
+.menu > li:hover .sub__menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+}
+
+.menu > li .sub__menu > a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    
+}
+.menu > li .sub__menu > a > li{
+    padding: 20px;
+    transition: .5s;
+}
+
+.menu > li .sub__menu > a:hover > li {
+    background-color:#E2487C;
+}
+
