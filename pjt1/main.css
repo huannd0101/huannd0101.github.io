@@ -308,7 +308,7 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-image: url(../../images/bg.jpg);
+    background-image: url(bg.jpg);
     background-size: cover;
 }
 
@@ -319,7 +319,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../../images/splash.jpg);
+    background-image: url(splash.jpg);
     background-size: 130%;
     background-position: center;
     mix-blend-mode: screen; 
@@ -463,7 +463,7 @@ textarea {
 
 .footer__bottom {
     height: 500px;
-    background-image: url(../../images/footer3.jpg);
+    background-image: url(footer3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
