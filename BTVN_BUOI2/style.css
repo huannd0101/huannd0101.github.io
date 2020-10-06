@@ -13,14 +13,14 @@ header {
 header .header-content {
     display: flex;
     position: absolute;
-    padding: 7% 10%;
+    padding: 6% 10%;
+    z-index: 1;
 }
 header .header-content .avt {
     height: 135px;
     width: 135px;
     border-radius: 50%;
     background-color: white;
-    z-index: 1;
     overflow: hidden;
 }
 header .header-content .avt img {
