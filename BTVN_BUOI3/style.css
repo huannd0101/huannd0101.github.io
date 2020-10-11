@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    line-height: 80px;
+}
+header h1 a{
+    color: #725494;
+}
+header h1 span {
+    color: black;
+}
+header h1 span:hover {
+    color: #725494;
+}
+header p {
+    text-transform: uppercase;
+}
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 5px 15px black;
+}
+nav ul.menu {
+    display: flex;
+    background-color: #725494;
+    justify-content: center;
+    height: 45px;
+}
+nav ul.menu > li {
+   position: relative;
+}
+nav ul.menu > li > a {
+    padding: 12px 20px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #725494;
+    line-height: 45px;
+    transition: all 0.4s;
+}
+nav ul.menu > li:hover > a{
+    background-color: #492C6F;
+}
+nav ul.menu > li > ul.sub-menu {
+    position: absolute;
+    width: 100%;
+    display: none;
+    transition: all 0.4s;
+}
+nav ul.menu > li:hover > ul.sub-menu {
+    display: block;
+}
+nav ul.menu > li > ul.sub-menu > li{
+    position: relative;
+}
+nav ul.menu > li > ul.sub-menu > li a{
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    background-color: #725494;
+    transition: all 0.4s;
+}
+nav ul.menu > li > ul.sub-menu > li:hover > a{
+    background-color: #D2691E;
+}
+nav ul.menu > li > ul.sub-menu > li > ul.sub-menu-1{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+    transition: all 0.4s;
+}
+nav ul.menu > li > ul.sub-menu > li:hover > ul.sub-menu-1{
+    display: block;
+}
+
+nav ul.menu > li > ul.sub-menu > li > ul.sub-menu-1 > li:hover > a{
+    background-color: #492C6F;  
+}
+
+.view {
+    display: flex;
+    margin-top: -60px;
+}
+.view .view__left {
+    flex-basis: 50%;
+}
+.view .view__left .view__left--content{
+    width: 80%;
+    margin: 200px 0 0 40px;
+    color: #492C6F;
+    position: relative;
+}
+.view .view__left .view__left--content .animate{
+    position: absolute;
+    width: 55%;
+    top: -200px;
+    left: 200px;
+    z-index: -1;
+}
+.view .view__left .view__left--content .animate img{
+    width: 100%;
+}
+.view .view__left .view__left--content h1{
+    font-size: 50px;
+}
+
+.view .view__left .view__left--content p {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.view .view__left .view__left--content a {
+    padding: 10px 20px;
+    background-color: #17092A;
+    color: white;
+    border-radius: 999px;
+    transition: 0.4s;
+    border: 1px solid #492C6F;
+}
+.view .view__left .view__left--content a:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+.view .view__right {
+    flex-basis: 50%;
+    z-index: -1;
+}
+.view .view__right img{
+    width: 100%;
+}
+
+section.box {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: -50px auto;
+    flex-wrap: wrap;
+}
+section.box .box__img{
+    width: 50%;
+    position: relative;
+}
+section.box .box__img img{
+    width: 100%;
+}
+section.box .box__img a{
+    position: absolute;
+    padding: 5px;
+    background-color: #D2691E;
+    width: 100px;
+    color: white;
+    top: 20px;
+    right: -50px;
+}
+section.box .box__img a.saleNam{
+    top: 20px;
+    right: 0;
+}
+section.box .box__text{
+    width: 50%;
+    padding: 20% 20px;
+}
+
+footer h1 {
+    padding: 20px;
+    color: white;
+    background-color: #492C6F;
+    text-align: center;
+    margin-top: 120px;
+}
+
+
+
+/*Cái này em nghịch thui ạ :((*/
+.waring {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: none;
+}
+.waring > h1 {
+    font-size: 50px;
+    margin-top: 20%;
+}
+@media (max-width: 500px){
+    .webpage {
+        display: none;
+    }
+    .waring {
+        display: block;
+        animation: animate1 1s infinite;
+    }
+}
+@keyframes animate1{
+    0% {
+        color: blue;
+    }
+    50% {
+        color: teal;
+    }
+    100% {
+        color: red;
+    }
+}
