@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nguyễn Đình Huân">
+    <title>Nguyễn Đình Huân</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="webpage">
+        <div class="container">
+            <div class="container__img">
+                <img src="https://www.w3schools.com/w3images/profile_girl.jpg" alt="">
+            </div>
+            
+            <div class="container__content">
+                <div class="menu" id="Menu">
+                    <i class="fa fa-remove"  onclick="Close()"></i>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="header">
+                        <h1>Jane Doe</h1>
+                        <p>Photographer and Web Designer.</p>
+                        <img class="header__img" src="https://www.w3schools.com/w3images/profile_girl.jpg" alt=""> <br>
+                        <a class="btn btn-header" href="#"><i class="fa fa-download"></i> Download Resume</a>
+                    </div>
+                    <div class="myPortfolio">
+                        <h1>My Portfolio</h1>
+                        <hr>
+                        <div class="boxImg">
+                            <div class="boxImg__child">
+                                <img src="https://www.w3schools.com/w3images/wedding.jpg" alt="">
+                                <img src="https://www.w3schools.com/w3images/rocks.jpg" alt="">
+                                <img src="https://www.w3schools.com/w3images/sailboat.jpg" alt="">            
+                            </div>
+                            <div class="boxImg__child">
+                                <img src="https://www.w3schools.com/w3images/underwater.jpg" alt="">
+                                <img src="https://www.w3schools.com/w3images/chef.jpg" alt="">
+                                <img src="https://www.w3schools.com/w3images/wedding.jpg" alt="">
+                                <img src="https://www.w3schools.com/w3images/p6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <h1>About</h1>
+                        <hr>
+                        <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="mySkills">
+                        <h1>My Skills</h1>
+                        <div class="mySkills__box">
+                            <span>Photography</span>
+                            <div class="status">
+                                <div class="status__complete width1">
+                                    95%
+                                </div>
+                                <div class="status__NoComplete"></div>
+                            </div>
+                        </div>
+                        <div class="mySkills__box">
+                            <span>Web Design</span>
+                            <div class="status">
+                                <div class="status__complete width2">
+                                    85%
+                                </div>
+                                <div class="status__NoComplete"></div>
+                            </div>
+                        </div>
+                        <div class="mySkills__box">
+                            <span>Photoshop</span>
+                            <div class="status">
+                                <div class="status__complete width3" >
+                                    80%
+                                </div>
+                                <div class="status__NoComplete"></div>
+                            </div>
+                        </div>
+                        <div class="mySkills__box--view">
+                            <ul>
+                                <li>14+ <br> Partners</li>
+                                <li>55+ <br> Projects Done</li>
+                                <li>89+ <br> Happy Clients</li>
+                                <li>150+ <br> Meetings</li>
+                            </ul>
+                        </div>
+                        <a class="btn" href="#"><i class="fa fa-download"></i> Download Resume</a>
+                    </div>
+                    <div class="myReputation">
+                        <h1>My Reputation</h1>
+                        <div class="respond__box">
+                            <div class="respond__box--avt">
+                                <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" alt="">
+                            </div>
+                            <div class="respond__box--content">
+                                <p><span class="name">Chandler Bing.</span>Web Designer.</p>
+                                <p>Jane Doe is just awesome. I am so happy to have met her!</p>
+                            </div>
+                        </div>
+                        <div class="respond__box">
+                            <div class="respond__box--avt">
+                                <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="">
+                            </div>
+                            <div class="respond__box--content">
+                                <p><span class="name">Chris Fox.</span>CEO at Mighty Schools.</p>
+                                <p>Jane Doe saved us from a web disaster.</p>
+                            </div>
+                        </div>
+                        <div class="respond__box">
+                            <div class="respond__box--avt">
+                                <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="">
+                            </div>
+                            <div class="respond__box--content">
+                                <p><span class="name">Rebecca Flex.</span>CEO at Company.</p>
+                                <p>No one is better than Jane Doe.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="myPrice">
+                        <h1>My Price</h1>
+                        <div class="boxBig">
+                            <div class="price__box">
+                                <h1 class="Title Title1">Basic</h1>
+                                <p>Web Design</p>
+                                <p>Photography</p>
+                                <p>5GB Storage</p>
+                                <p>Mail Support</p>
+                                <h1>$ 10</h1>
+                                <p>per month</p>
+                                <div class="box-btn">
+                                    <a href="#" class="btn signUp">Sign Up</a>
+                                </div>
+                            </div>
+                            <div class="price__box">
+                                <h1 class="Title Title2">Pro</h1>
+                                <p>Web Design</p>
+                                <p>Photography</p>
+                                <p>5GB Storage</p>
+                                <p>Endless Support</p>
+                                <h1>$ 25</h1>
+                                <p>per month</p>
+                                <div class="box-btn">
+                                    <a href="#" class="btn signUp">Sign Up</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactMe">
+                        <h1>Contact Me</h1>
+                        <hr>
+                        <p><i class="fa fa-map-marker"></i> Chicago, US</p>
+                        <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
+                        <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+                        <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+                        <p class="Tile-form">Lets get in touch. Send me a message:</p>
+                        <form>
+                            <input type="text" placeholder="Name"> <br>
+                            <input type="text" placeholder="Email"><br>
+                            <input type="text" placeholder="Subject"><br>
+                            <input type="text" placeholder="Messege">
+                        </form>
+                        <a href="#" class="btn btn-sent">
+                            <i class="fa fa-paper-plane"></i>
+                            SENT MESSAGE
+                        </a>
+                    </div>
+                    <!-- footer -->
+                    <div class="footer">
+                        <div class="icon">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-camera"></i>
+                            <i class="fa fa-snapchat"></i>
+                            <i class="fa fa-pinterest-p"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-linkedin-in"></i>
+                            <p>Powered by <a href="#">w3.css</a></p>
+                        </div>              
+                    </div><!-- end--footer -->
+                </div><!-- end content -->
+            </div> <!-- end container__content -->
+        </div><!-- end container -->
+        <i class="fa fa-bars" onclick="Open()"></i>
+    </div><!-- end webpage -->
+
+    <!-- js -->
+    <script>
+        function Close(){
+            document.getElementsByClassName("menu")[0].style.display = "none";
+        }
+        function Open(){
+            document.getElementsByClassName("menu")[0].style.display = "block";
+        }
+    </script>
+</body>
+</html>

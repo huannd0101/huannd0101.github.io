@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+.webpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+}
+.container .container__img{
+    width: 40%;
+}
+.container .container__img img {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+.container .container__content{
+    width: 60%;
+}
+
+.container .container__content .content{
+    width: 95%;
+    margin: auto;
+}
+
+/*header*/
+.header {
+    text-align: center;     
+    margin-top: 100px;
+}
+.header h1{
+    margin: 50px 0 20px 0;
+    font-size: 60px;
+}
+.header p{
+    margin: 20px 0 30px 0;
+}
+.header img {
+    width: 45%;
+    height: 100vh;    
+    margin: auto;
+    margin-bottom: 50px;
+    display: none;
+}
+.btn{
+    padding: 7px 10px;
+    color: black;
+    background-color: #f0f0f0;
+    transition: all .4s;
+}
+a:hover{
+    background-color: #D4D4D4;
+}
+
+/**/
+.myPortfolio h1, 
+.about h1, 
+.mySkills h1,
+.myReputation h1, 
+.myPrice h1, 
+.contactMe h1{
+    color: #616161;
+    padding-top: 20px;
+} 
+.about p {
+    color: #616161;
+}
+hr {
+    margin: 15px 0;
+}
+
+/*portfolio*/
+.myPortfolio .boxImg{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.myPortfolio .boxImg .boxImg__child{
+    width: 48%;
+}
+.myPortfolio .boxImg .boxImg__child img{
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+/*Skills*/
+.mySkills .mySkills__box span {
+    color: #616161;
+    letter-spacing: 5px;
+}
+.mySkills .mySkills__box .status {
+    margin: 10px 0;
+    display: flex;
+    position: relative;
+    height: 25px;
+    width: 100%;
+    background-color: #F1F1F1;
+}
+.mySkills .mySkills__box .status .status__complete{
+    position: absolute;
+    background-color: #616161;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+.mySkills .mySkills__box .status .width1{
+    width: 95%;
+}
+.mySkills .mySkills__box .status .width2{
+    width: 90%;
+}
+.mySkills .mySkills__box .status .width3{
+    width: 80%;
+}
+.mySkills .mySkills__box--view{
+    color: white;
+    text-align: center;
+    background-color: #616161;
+    margin: 50px 0 30px 0;
+}
+.mySkills .mySkills__box--view ul{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+/*respond*/
+.respond__box {
+    display: flex;
+    padding: 15px 0;
+}
+.respond__box .respond__box--avt{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.respond__box .respond__box--avt img{
+    width: 100%;
+    height: 100%;
+}
+.respond__box .respond__box--content p{
+    color: #616161;
+    padding: 7px 0 7px 15px;
+}
+.respond__box .respond__box--content p .name{
+    color: black;
+}
+
+/*price*/
+.myPrice .boxBig {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.myPrice .price__box {
+    width: 47%;
+    text-align: center;
+    box-shadow: 0px 0px 5px rgb(107, 107, 107);
+}
+.myPrice .price__box:hover {
+    box-shadow: 0px 0px 15px rgb(85, 85, 85);
+}
+.myPrice .price__box > h1.Title {
+    color: white;
+    padding: 10px 0px;
+}
+.myPrice .price__box > h1.Title1 {
+    background-color: #616161;
+}
+.price__box > h1.Title2 {
+    background-color: black;
+}
+.price__box p {
+    border-bottom: 1px solid rgb(214, 214, 214);
+    padding: 10px 0;
+}
+.price__box  p > h1{
+    padding: 0;
+    margin: 0;
+}
+.price__box a.signUp:hover{
+    background-color: black;
+    color: white;
+}
+.myPrice .price__box .box-btn{
+    display: flex;
+    height: 100px;
+    background-color: #F1F1F1;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Contact*/
+.contactMe p {
+    color: #808080;
+    padding: 10px 0;
+    font-size: 24px;
+}
+.contactMe img {
+    width: 100%;
+    margin-top: 20px;
+}
+.contactMe form {
+    margin-bottom: 30px;
+}
+.contactMe input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    font-size: 16px;
+}
+.contactMe .Tile-form {
+    font-size: 16px;
+    margin-top: 40px;
+}
+.btn-sent {
+    margin-top: 30px;
+}
+
+/*footer*/
+.footer {
+    width: 100%;
+    text-align: center;
+}
+.footer .icon {
+    margin: 100px 0 50px 0;
+}
+.footer .icon p{
+    margin: 30px;
+}
+.footer .icon i{
+    font-size: 24px;
+    color: #808080;
+    
+}
+.footer .icon i:hover{
+    font-size: 24px;
+    color: #c0bfbf;
+}
+
+/*reponsive*/
+@media screen and (max-width: 990px){
+    .container {
+        flex-direction: column;
+    }
+    .header {
+        width: 100%;
+    }
+    .container__img {
+        display: none;
+    }
+    .header img {
+        display: block;
+        width: 55%;
+    }
+    .container__content {
+        width: 100% !important;
+    }
+    .menu {
+        width: 60% !important;
+        margin-left: 40%;
+    }
+}
+@media screen and (max-width: 600px){
+    .header img {
+        width: 80%;
+        height: 110vh;
+    }
+    .myPrice .price__box {
+        width: 97%;
+        margin-bottom: 30px;
+    }
+    .myPortfolio .boxImg .boxImg__child{
+        width: 98%;
+    }
+}
+
+/*------------------------------------------------*/
+.menu {
+    width: 100%;
+    background-color: black;
+    height: 100vh;
+    text-align: center;
+    position: sticky;
+    z-index: 10;
+    display: none;
+    top: 0;
+    padding-top: 120px;
+}
+.menu ul li {
+    padding: 10px;
+    font-size: 30px;
+}
+.menu ul li a {
+    color: rgb(141, 141, 141);
+}
+.menu ul li a:hover {
+    color: white;
+    background: none;
+}
+.fa-bars {
+    position: fixed;
+    background-color: wheat;
+    padding: 0 5px;
+    top: 10px;
+}
+.fa-remove {
+    color: white;
+    position: absolute;
+}
+.fa-bars, 
+.fa-remove {
+    right: 10px;
+    top: 2%;
+    transform: scale(2);
+    transition: all .4s;
+}
+.fa-remove:hover, 
+.fa-bars:hover {
+    color: red;
+    background: none;
+}
