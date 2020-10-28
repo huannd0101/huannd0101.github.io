@@ -289,7 +289,7 @@ hr {
     }
 }
 
-/*------------------------------------------------*/
+/*---------------------Phần nghịch thêm---------------------------*/
 .menu {
     width: 100%;
     background-color: black;
@@ -333,4 +333,19 @@ hr {
 .fa-bars:hover {
     color: red;
     background: none;
+}
+
+.warning {
+    display: none;
+    text-align: center;
+    color: red;
+    transform: translate(0%, 50%);
+}
+@media screen and (max-width: 200px) {
+    .webpage {
+        display: none;
+    }
+    .warning {
+        display: block;
+    }
 }
