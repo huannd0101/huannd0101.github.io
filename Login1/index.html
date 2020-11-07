@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        :root {
+            --bg1: #9b59b6;
+            --bg2: #3498db;
+            --text: #26ade4;
+        } 
+        *{
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            outline: none;  
+        }
+        body {
+            background: url(./images/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            width: 340px;
+            height: 450px;
+            background: #fff;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .container form {
+            position: absolute;
+            top: 100px;
+            padding: 0 20px;
+            width: 340px;
+            transition: 0.5s;
+        }   
+        .container form h1 {
+            color: #333;
+            margin-bottom: 40px;
+        }   
+        .container form input{
+            height: 35px;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            background: transparent;
+        }   
+        .container form button {
+            height: 35px;
+            width: 120px;
+            background: linear-gradient(to right, var(--bg1), var(--bg2));;
+            border: none;
+            border-radius: 999px;
+            margin-top: 20px;
+            color: white;
+            cursor: pointer;
+        }
+        .form-two {
+            left: -340px;
+        }
+        .form-three {
+            left: 340px;
+        }
+        .form-step {
+            display: flex;
+            height: 40px;
+            border-bottom: 2px solid #ccc;
+            position: relative;
+        }
+        .form-step span {
+            display: block;
+            width: 100px;
+            line-height: 40px;
+        }
+        .line {
+            position: absolute;
+            height: 40px;
+            width: 100px;
+            background: linear-gradient(to right, var(--bg1), var(--bg2));
+            transition: 0.5s;
+            opacity: 0.8;
+        }
+        .line::before {
+            content: '';
+            position: absolute;
+            border-bottom: 20px solid transparent;
+            border-top: 20px solid transparent;
+            border-left: 20px solid #3498db;
+            border-right: 20px solid transparent;
+            right: -40px;
+        }
+        .form-box {
+            display: flex;
+        }
+        .red {
+            color: red;
+        }
+        .blue {
+            color: rgb(55, 55, 245);
+        }
+        .fa {
+            line-height: 40px;
+            position: absolute;
+            display: none;
+        }
+        .icon {
+            display: flex;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-step">
+            <div class="line"></div>
+            <span>Step1</span>
+            <span>Step2</span>
+            <span>Step3</span>
+        </div>
+        <form class="form-one">
+            <h1>Name</h1>
+            <div class="form-box">
+                <input type="text" placeholder="First Name" id="firName">
+                <div class="icon">
+                    <i class="fa fa-check blue"></i>
+                    <i class="fa fa-times red"></i>
+                </div>
+            </div>
+            <div class="form-box">
+                <input type="text" placeholder="Last Name" id="lasName">
+                <div class="icon">
+                    <i class="fa fa-check blue"></i>
+                    <i class="fa fa-times red"></i>
+                </div>
+            </div>
+            <button type="button" id="next-one">Next</button>
+        </form>
+        <form class="form-two">
+            <h1>Contact</h1>
+            <div class="form-box">
+                <input type="text" placeholder="Email" id="email">
+                <div class="icon">
+                    <i class="fa fa-check blue"></i>
+                    <i class="fa fa-times red"></i>
+                </div>
+            </div>
+            <div class="form-box">
+                <input type="text" placeholder="Phone Number" id="phone">
+                <div class="icon">
+                    <i class="fa fa-check blue"></i>
+                    <i class="fa fa-times red"></i>
+                </div>
+            </div>
+            <button type="button" id="back-one">Back</button>
+            <button type="button" id="next-two">Next</button>
+        </form>
+        <form class="form-three">
+            <h1>Submit</h1>
+            <div class="form-box">
+                <input type="text" placeholder="User name" id="userName">
+                <div class="icon">
+                    <i class="fa fa-check blue"></i>
+                    <i class="fa fa-times red"></i>
+                </div>
+            </div>
+            <div class="form-box">
+                <input type="password" placeholder="Password" id="pass1">
+                <div class="icon">
+                    <i class="fa fa-check blue"></i>
+                    <i class="fa fa-times red"></i>
+                </div>
+            </div>
+            <div class="form-box">
+                <input type="password" placeholder="Password Again" id="pass2">
+                <div class="icon">
+                    <i class="fa fa-check blue"></i>
+                    <i class="fa fa-times red"></i>
+                </div>
+            </div>
+            <button type="button" id="back-two">Back</button>
+            <button type="button" id="next-three">Sign up</button>
+        </form>
+    </div>
+    
+    <script>
+        const nextOne = document.querySelector('#next-one');
+        const nextTwo = document.querySelector('#next-two');
+        const backOne = document.querySelector('#back-one');
+        const backTwo = document.querySelector('#back-two');
+
+        const formOne = document.querySelector('.form-one');
+        const formTwo = document.querySelector('.form-two');
+        const formThree = document.querySelector('.form-three');
+         
+        const formLine = document.querySelector('.line');
+        const formBox = document.querySelector('.form-box');
+        const formIcon = document.getElementsByClassName('icon');
+
+        // const reName = /^[A-Za-zÀ-ú ]+$/;
+        const reName = /^[àảãáạăằẳẵắặâầẩẫấậđèẻẽéẹêềểễếệìỉĩíịòỏõóọôồổỗốộơờởỡớợùủũúụưừửữứựỳỷỹýỵĐA-Za-z ]+$/;
+        const rePhone = /^0[\d]{9}$/;
+        const reEmail = /^[a-z][a-z0-9A-Z_]{5,32}@gmail.com$/;
+        const reUserName = /^[a-zA-Z0-9]{6,}$/;
+        const rePass = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[\d])(?=.*[!@#%&*_?])([a-zA-Z0-9!@#%&*_?]{6,})$/;
+
+
+        const inputFirName = document.getElementById("firName");
+        inputFirName.addEventListener("input", function(){
+            var str = inputFirName.value;
+            if(reName.test(str)){
+                document.getElementsByTagName("i")[0].style.display = "block";
+                document.getElementsByTagName("i")[1].style.display = "none";
+            }else {
+                document.getElementsByTagName("i")[0].style.display = "none";
+                document.getElementsByTagName("i")[1].style.display = "block";
+            }
+        });
+
+        const inputLasName = document.getElementById("lasName");
+        inputLasName.addEventListener("input", function(){
+            var str = inputLasName.value;
+            if(reName.test(str)){
+                document.getElementsByTagName("i")[2].style.display = "block";
+                document.getElementsByTagName("i")[3].style.display = "none";
+            }else {
+                document.getElementsByTagName("i")[2].style.display = "none";
+                document.getElementsByTagName("i")[3].style.display = "block";
+            }
+        });
+
+        const inputEmail = document.getElementById("email");
+        inputEmail.addEventListener("input", function(){
+            var str = inputEmail.value;
+            if(reEmail.test(str)){
+                document.getElementsByTagName("i")[4].style.display = "block";
+                document.getElementsByTagName("i")[5].style.display = "none";
+            }else {
+                document.getElementsByTagName("i")[4].style.display = "none";
+                document.getElementsByTagName("i")[5].style.display = "block";
+            }
+        });
+
+        const inputPhone = document.getElementById("phone");
+        inputPhone.addEventListener("input", function(){
+            var str = inputPhone.value;
+            if(rePhone.test(str)){
+                document.getElementsByTagName("i")[6].style.display = "block";
+                document.getElementsByTagName("i")[7].style.display = "none";
+            }else {
+                document.getElementsByTagName("i")[6].style.display = "none";
+                document.getElementsByTagName("i")[7].style.display = "block";
+            }
+        });
+
+        const inputUserName = document.getElementById("userName");
+        inputUserName.addEventListener("input", function(){
+            var str = inputUserName.value;
+            if(reUserName.test(str)){
+                document.getElementsByTagName("i")[8].style.display = "block";
+                document.getElementsByTagName("i")[9].style.display = "none";
+            }else {
+                document.getElementsByTagName("i")[8].style.display = "none";
+                document.getElementsByTagName("i")[9].style.display = "block";
+            }
+        });
+
+        const passWord = document.getElementById("pass1");
+        passWord.addEventListener("input", function(){
+            var str = passWord.value;
+            if(rePass.test(str)){
+                document.getElementsByTagName("i")[10].style.display = "block";
+                document.getElementsByTagName("i")[11].style.display = "none";
+            }else {
+                document.getElementsByTagName("i")[10].style.display = "none";
+                document.getElementsByTagName("i")[11].style.display = "block";
+            }
+        });
+        
+        const passWord2 = document.getElementById("pass2");
+        passWord2.addEventListener("input", function(){
+            var str = passWord2.value;
+            var str2 = passWord.value;
+            if(str == str2 && rePass.test(str2)){
+                document.getElementsByTagName("i")[12].style.display = "block";
+                document.getElementsByTagName("i")[13].style.display = "none";
+            }else {
+                document.getElementsByTagName("i")[12].style.display = "none";
+                document.getElementsByTagName("i")[13].style.display = "block";
+            }
+        });
+
+        nextOne.addEventListener("click", function(){
+            formOne.style.left = "-340px";
+            formTwo.style.left = "0px";
+            formLine.style.width = "200px";
+        });
+
+        nextTwo.addEventListener("click", function(){
+            formTwo.style.left = "-340px";
+            formThree.style.left = "0px";
+            formLine.style.width = "340px";
+        });
+
+        backOne.addEventListener("click", function(){
+            formOne.style.left = "0px";
+            formTwo.style.left = "340px";
+            formLine.style.width = "100px";
+        });
+
+        backTwo.addEventListener("click", function(){
+            formTwo.style.left = "0px";
+            formThree.style.left = "340px";
+            formLine.style.width = "200px";
+        });
+    </script>
+</body>
+</html>
