@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="stylefooter.css">
+    <link rel="stylesheet" href="styleheader.css">
+    <title>Charts Details</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="../../Nguyen_Dinh_Huan/Home.html">
+                <img src="logo.png" alt="This is logo">
+            </a>
+        </div>
+        <div class="icon-menu" id="iconMenu" onclick="myF1()">
+            <i class="fa fa-bars" id="idBars"></i>
+            <i class="fa fa-remove" id="idRemove"></i>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../../Nguyen_Dinh_Huan/Home.html">HOME</a>
+                    </li>
+                    <li id="sub1">
+                        <a href="#">
+                            <div class="text-icon">
+                                <p>PAGES</p>
+                                <p><i class="fa fa-angle-down"></i></p>
+                            </div>
+                        </a>
+                        <div id="sub-menu">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="../../Nguyen_Dinh_Huan/Home.html">- Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Charts/charts.html">- Charts</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Charts Details/ChartsDetails.html">- Charts Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Podcarts/podcarts.html">- Podcast</a>
+                                    </li>
+                                    <li>
+                                        <a href="../PodcartsDetails/PodcartsDetail.html">- Podcast Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../Nguyen_Dinh_Huan/Show.html">- Show</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../Ha_Van_Phong/events/index.html">- Event</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../Ha_Van_Phong/blog/index.html">- Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="../BlogDetails/BlogDetails.html">- Blog Details</a>
+                                    </li>
+                                    <li id="sub2">
+                                        <a href="#">
+                                            <div class="div__li">
+                                                <p>
+                                                    - Dropdown
+                                                </p> 
+                                                <p>
+                                                    <i class="fa fa-chevron-right"></i>
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div id="sub-menu2">
+                                            <nav>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">- Dropdown Item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">- Dropdown Item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">- Dropdown Item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">- Dropdown Item</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../../Nguyen_Dinh_Huan/Show.html">SHOWS</a>
+                    </li>
+                    <li>
+                        <a href="../Charts/charts.html">CHARTS</a>
+                    </li>
+                    <li>
+                        <a href="../Podcarts/podcarts.html">PODCASTS</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="text-icon">
+                                <p>MEGA</p>
+                                <p><i class="fa fa-angle-down"></i></p>
+                            </div>
+                        </a>
+                        <div class="sub-menu2b">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="../../Nguyen_Dinh_Huan/Home.html">- Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="./charts.html">- Charts</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Charts Details/ChartsDetails.html">- Charts Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Podcarts/podcarts.html">- Podcast</a>
+                                    </li>
+                                    <li>
+                                        <a href="../PodcartsDetails/PodcartsDetail.html">- Podcast Details</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <ul>
+                                        <li>
+                                            <a href="../../Nguyen_Dinh_Huan/Show.html">- Show</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../Ha_Van_Phong/events/index.html">- Event</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../Ha_Van_Phong/blog/index.html">- Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="../BlogDetails/BlogDetails.html">- Blog Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../Nguyen_Dinh_Huan/Home.html">- Home</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <ul>
+                                    <ul>
+                                        <li>
+                                            <a href="./charts.html">- Charts</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Charts Details/ChartsDetails.html">- Charts Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Podcarts/podcarts.html">- Podcast</a>
+                                        </li>
+                                        <li>
+                                            <a href="../PodcartsDetails/PodcartsDetail.html">- Podcast Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../Nguyen_Dinh_Huan/Show.html">- Show</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">- Show</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Event</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="../BlogDetails/BlogDetails.html">- Blog Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Home</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../../Ha_Van_Phong/events/index.html">EVENTS</a>
+                    </li>
+                    <li>
+                        <a href="../../Ha_Van_Phong/blog/index.html">BLOG</a>
+                    </li>
+                    <li class="header__icon">
+                        <a href="#">
+                            <i class="fa fa-share-alt"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="content1" style="background-image: url('34.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-position: center;">
+            <div class="container_content1">
+                <img class="img" src="xalbum.png.pagespeed.ic.WVcq9eDlRl.webp" alt="">
+                <div class="text">
+                    <h1>Day Dream</h1>
+                    <p>Deam Ft J-Snopy</p> <br> <br>
+                    <p>You may also download and play the latest HD series and movies, and also watch free live television</p>
+                    <br><br>
+                    <div class="app">
+                            <img src="data:image/webp;base64,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" alt="">                        
+                            <img src="data:image/webp;base64,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" alt="">                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="music">
+                <div class="left">
+                    <div class="music_text1">1.</div>
+                    <img src="x25.jpg.pagespeed.ic.b2-rfYzuqD.webp" alt="">
+                    <div class="icon" onclick="play1()"><i class="fa fa-play-circle fa1"></i></div>
+                    <div class="music_text2">
+                        <span>Way Back Home - </span>
+                        <span>RadioDaily Show</span>
+                    </div>
+                </div>
+                <span class="right">$12.99</span>
+            </div>
+            <div class="music">
+                <div class="left">
+                    <div class="music_text1">2.</div>
+                    <img src="x26.jpg.pagespeed.ic.AfsGl5aLWr.webp" alt="">
+                    <div class="icon" onclick="play2()"><i class="fa fa-play-circle fa2"></i></div>
+                    <div class="music_text2">
+                        <span>Goodbye & Good Riddance - </span>
+                        <span>Juice World</span>
+                    </div>
+                </div>
+                <span class="right">$12.99</span>
+            </div>
+            <div class="music">
+                <div class="left">
+                    <div class="music_text1">3.</div>
+                    <img src="x10.jpg.pagespeed.ic.JWvSzpckX4.webp" alt="">
+                    <div class="icon" onclick="play3()"><i class="fa fa-play-circle fa3"></i></div>
+                    <div class="music_text2">
+                        <span>The Greatest Showman - </span>
+                        <span>Soundtrack</span>
+                    </div>
+                </div>
+                <span class="right">$12.99</span>
+            </div>
+            <div class="music">
+                <div class="left">
+                    <div class="music_text1">4.</div>
+                    <img src="x28.jpg.pagespeed.ic.x1Jb4Y2ZJe.webp" alt="">
+                    <div class="icon" onclick="play4()"><i class="fa fa-play-circle fa4"></i></div>
+                    <div class="music_text2">
+                        <span>Mamma Mia! Here We Go Again - </span>
+                        <span>Soundtrack</span>
+                    </div>
+                </div>
+                <span class="right">$12.99</span>
+            </div>
+            <div class="music">
+                <div class="left">
+                    <div class="music_text1">5.</div>
+                    <img src="x29.jpg.pagespeed.ic.QEpwHadkKV.webp" alt="">
+                    <div class="icon" onclick="play5()"><i class="fa fa-play-circle fa5"></i></div>
+                    <div class="music_text2">
+                        <span>Pray For The Wicked - </span>
+                        <span>Panic! At The Disco</span>
+                    </div>
+                </div>
+                <span class="right">$12.99</span>
+            </div>
+        </div>
+        <div class="content3">
+           <div class="text">
+               <h1>YOU MAY ALSO LIKE</h1>
+               <p>Show More Charts</p>
+           </div>
+           <div class="container_img">
+            <div class="block_img">
+                <div class="img" style="background-image: url(35.jpg); background-size: 100% auto;background-repeat: no-repeat;">
+                    <div class="img_in" >
+                        <div class="text_content">
+                            <h3>Screaming Females</h3>
+                           
+                            <p>January 15, 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block_img">
+                <div class="img" style="background-image: url(36.jpg); background-size: 100% auto;background-repeat: no-repeat;">
+                    <div class="img_in" >
+                        <div class="text_content">
+                            <h3>Screaming Females</h3>
+                           
+                            <p>January 15, 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block_img">
+                <div class="img" style="background-image: url(37.jpg); background-size: 100% auto;background-repeat: no-repeat;">
+                    <div class="img_in" >
+                        <div class="text_content">
+                            <h3>Screaming Females</h3>
+                           
+                            <p>January 15, 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+            
+        </div>
+    </div>
+    <hr style="opacity: 0.4;">
+    <div class="footer" id="footer">
+      <div class="content1">
+          <img src="xlogo2.png.pagespeed.ic.YWSP5vnxOK.webp" alt="">
+          <p>Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="infor">
+              <i class="fa fa-map-marker-alt"></i>
+              <div class="infor-text">24 No. Amazing Valley, Aewsome St. New York, USA</div>
+          </div>
+          <div class="infor">
+              <i class="fa fa-phone"></i>
+              +11 123 4567890
+          </div>
+          <div class="infor">
+              <i class="fa fa-envelope"></i>
+              info.colorlib@gmail.com
+          </div>
+      </div>
+      <div class="content2">
+          <h4>Twitter Feed</h4>
+          <div class="text">
+              <i class="fab fa-twitter"></i>
+              <div class="text-content">
+                  <span>Kerem Suer</span> @kerem American conducts it first ever done strike Qaeda                </div>
+              </div>
+          <div class="text">
+              <i class="fab fa-twitter"></i>
+              <div class="text-content">
+                  <span>Axel Hervelle</span> @axel_hervelle Tens of thousands attend rallies held in D.C.
+              </div>
+          </div>
+          <div class="text">
+              <i class="fab fa-twitter"></i>
+              <div class="text-content">
+                  <span>Chris Pratt</span> @chris_pratt Hundreds of protesters shut down meeting.
+              </div>
+          </div>
+      </div>
+      <div class="content3">
+          <h4>Instagram</h4>
+          <div class="box">
+              <img src="2.jpg" alt="">
+              <img src="3.jpg" alt="">
+              <img src="4.jpg" alt="">
+          </div>
+          <div class="box">
+              <img src="5.jpg" alt="">
+              <img src="6.jpg" alt="">
+              <img src="2.jpg" alt="">
+          </div>
+          <div class="box">
+              <img src="4.jpg" alt="">
+              <img src="9.jpg" alt="">
+              <img src="10.jpg" alt="">
+          </div>
+      </div>
+  </div>
+  <div class="footer-end">
+      <hr>
+     <div class="icon">
+      <a href="#top"><i class="fa fa-arrow-alt-circle-up"></i></a>
+     </div>
+     <br><br>
+     <p>HIT with luv <i class="fa fa-heart"></i></p>
+  </div>
+    <script>
+        
+var icon1 = document.querySelector('.fa1')
+var icon2 = document.querySelector('.fa2')
+var icon3 = document.querySelector('.fa3')
+var icon4 = document.querySelector('.fa4')
+var icon5 = document.querySelector('.fa5')
+var isPlayIcon1 = true
+function play1(){
+    if(isPlayIcon1){
+        icon1.classList.remove('fa-play-circle');
+        icon1.classList.add('fa-pause-circle');
+        isPlayIcon1 = false;
+    } else {
+        icon1.classList.remove('fa-pause-circle');
+        icon1.classList.add('fa-play-circle');
+        isPlayIcon1 = true;
+    }
+}
+var isPlayIcon2 = true
+function play2(){
+    if(isPlayIcon2){
+        icon2.classList.remove('fa-play-circle');
+        icon2.classList.add('fa-pause-circle');
+        isPlayIcon2 = false;
+    } else {
+        icon2.classList.remove('fa-pause-circle');
+        icon2.classList.add('fa-play-circle');
+        isPlayIcon2 = true;
+    }
+}
+var isPlayIcon3 = true
+function play3(){
+    if(isPlayIcon3){
+        icon3.classList.remove('fa-play-circle');
+        icon3.classList.add('fa-pause-circle');
+        isPlayIcon3 = false;
+    } else {
+        icon3.classList.remove('fa-pause-circle');
+        icon3.classList.add('fa-play-circle');
+        isPlayIcon3 = true;
+    }
+}
+var isPlayIcon4 = true
+function play4(){
+    if(isPlayIcon4){
+        icon4.classList.remove('fa-play-circle');
+        icon4.classList.add('fa-pause-circle');
+        isPlayIcon4 = false;
+    } else {
+        icon4.classList.remove('fa-pause-circle');
+        icon4.classList.add('fa-play-circle');
+        isPlayIcon4 = true;
+    }
+}
+var isPlayIcon5 = true
+function play5(){
+    if(isPlayIcon5){
+        icon5.classList.remove('fa-play-circle');
+        icon5.classList.add('fa-pause-circle');
+        isPlayIcon5 = false;
+    } else {
+        icon5.classList.remove('fa-pause-circle');
+        icon5.classList.add('fa-play-circle');
+        isPlayIcon5 = true;
+    }
+}
+    </script>
+</body>
+</html>

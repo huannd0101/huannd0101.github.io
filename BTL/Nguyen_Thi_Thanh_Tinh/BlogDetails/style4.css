@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body .container .content1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+body .container .content1 .container-content1 {
+  background-color: rgba(0, 0, 0, 0.589);
+  padding: 250px 0;
+}
+
+body .container .content1 .container-content1 h1 {
+  font-size: 40px;
+  padding-bottom: 25px;
+}
+
+body .container .content1 .container-content1 span {
+  font-size: 15px;
+}
+
+body .container .content1 .container-content1 span:hover {
+  color: #dc2878;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  cursor: pointer;
+}
+
+body .container .content2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 12%;
+}
+
+body .container .content2 .left {
+  margin-right: 40px;
+}
+
+body .container .content2 .left h5 {
+  text-align: center;
+  font-size: 15px;
+}
+
+body .container .content2 .left .icon {
+  width: 60%;
+  padding: 5px 10px;
+}
+
+body .container .content2 .left .icon .post-share a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+body .container .content2 .left .icon .post-share a i {
+  font-size: 40px;
+  color: blue;
+}
+
+body .container .content2 .left .icon .post-share a i:hover {
+  color: #dc2878 !important;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+body .container .content2 .left .icon .post-share a .text {
+  display: none;
+  position: absolute;
+  right: 50px;
+  top: -15px;
+  background: black;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+body .container .content2 .left .icon .post-share a:hover .text {
+  display: block;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+body .container .content2 .left .icon .arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid black;
+  position: absolute;
+  right: -8px;
+  top: 9px;
+}
+
+body .container .content2 .right .text1 {
+  line-height: 30px;
+  font-size: 17px;
+  color: #6e6e6e;
+}
+
+body .container .content2 .right .text2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+}
+
+body .container .content2 .right .text2 .icon {
+  color: #dc2878;
+  font-size: 25px;
+  padding: 20px 10px;
+}
+
+body .container .content2 .right .text2 .content {
+  padding: 10px 30px;
+}
+
+body .container .content2 .right .tag {
+  font-size: 14px;
+  padding: 50px 0;
+}
+
+body .container .content2 .right .tag span {
+  color: #dc2878;
+  font-size: 17px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+body .container .content2 .right .tag span:hover {
+  color: black;
+  cursor: pointer;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+body .container .content2 .right .comment {
+  padding: 50px 0;
+}
+
+body .container .content2 .right .comment .comment-content {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .content2 .right .comment .comment-content img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+body .container .content2 .right .comment .comment-content .title span:nth-child(1) {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+body .container .content2 .right .comment .comment-content .title span:nth-child(1):hover {
+  color: #dc2878;
+  cursor: pointer;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+body .container .content2 .right .comment .comment-content .title span:nth-child(2) {
+  font-size: 15px;
+  color: #6e6e6e;
+}
+
+body .container .content2 .right .comment .comment-content .title p {
+  line-height: 30px;
+  font-size: 17px;
+  color: #6e6e6e;
+}
+
+body .container .content2 .right .comment .comment-content .title button {
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid #6e6e6e54;
+}
+
+body .container .content2 .right .comment .comment-content .title button:hover {
+  background-color: #dc2878;
+  color: white;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  border: 1px solid #dc2878;
+  cursor: pointer;
+}
+
+body .container .content2 .right .formm {
+  padding-top: 50px;
+}
+
+body .container .content2 .right .formm h1 {
+  font-size: 35px;
+  color: black;
+  padding-bottom: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body .container .content2 .right .formm .name-email input {
+  width: 47%;
+  padding: 10px 10px;
+  font-size: 15px;
+  border: 1px solid #a6a6a6;
+}
+
+body .container .content2 .right .formm .name-email input:focus {
+  outline: 0.5px solid #dd2379;
+  border: none;
+}
+
+body .container .content2 .right .formm .comment {
+  width: 98.5%;
+  margin: 20px 0;
+  height: 100px;
+  padding: 10px 10px;
+  font-size: 15px;
+  border: 1px solid #a6a6a6;
+}
+
+body .container .content2 .right .formm .comment:focus {
+  outline: 0.5px solid #dd2379;
+  border: none;
+}
+
+body .container .content2 .right .formm button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #dd2379;
+  border: 1px solid #dd2379;
+  color: white;
+  font-size: 15px;
+}
+
+body .container .content2 .right .formm button:hover {
+  background-color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+body .container .content3 {
+  width: 100%;
+  padding: 10px 10%;
+  margin-bottom: 50px;
+}
+
+body .container .content3 h1 {
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 50px;
+}
+
+body .container .content3 .container-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .container .content3 .container-box .box {
+  -webkit-box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.15);
+  width: 31%;
+  height: auto;
+}
+
+body .container .content3 .container-box .box img {
+  width: 100%;
+}
+
+body .container .content3 .container-box .box .time {
+  padding: 30px 20px;
+}
+
+body .container .content3 .container-box .box .time span, body .container .content3 .container-box .box .time i {
+  color: #6e6e6ec5;
+  font-size: 15px;
+}
+
+body .container .content3 .container-box .box .time h3 {
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: 'Oswald', sans-serif;
+}
+
+body .container .content3 .container-box .box .time h3:hover {
+  color: #dc2878;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  cursor: pointer;
+}
+
+body .container .content3 .container-box .box .time p {
+  color: #6e6e6e;
+  padding-bottom: 20px;
+}
+
+body .container .content3 .container-box .box .time .more {
+  color: #6e6e6ec5;
+  font-size: 15px;
+}
+
+body .container .content3 .container-box .box .time .more:hover {
+  color: #dc2878;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  cursor: pointer;
+}
+
+body .container .content3 .container-box .box .time .more:hover i {
+  color: #dc2878;
+}
+
+@media (max-width: 991px) {
+  body .container .content2 .right .formm .name-email input {
+    width: 100%;
+    margin-top: 20px;
+  }
+  body .container .content2 .right .formm .comment {
+    width: 100%;
+  }
+  body .container .content3 .container-box {
+    width: 100%;
+  }
+  body .container .content3 .container-box .box {
+    width: 47%;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  body .container .content3 .container-box {
+    width: 100%;
+  }
+  body .container .content3 .container-box .box {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+/*# sourceMappingURL=style4.css.map */

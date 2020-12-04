@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="stylefooter.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="styleheader.css">
+    <title>Podcasts</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="../../Nguyen_Dinh_Huan/Home.html">
+                <img src="logo.png" alt="This is logo">
+            </a>
+        </div>
+        <div class="icon-menu" id="iconMenu" onclick="myF1()">
+            <i class="fa fa-bars" id="idBars"></i>
+            <i class="fa fa-remove" id="idRemove"></i>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../../Nguyen_Dinh_Huan/Home.html">HOME</a>
+                    </li>
+                    <li id="sub1">
+                        <a href="#">
+                            <div class="text-icon">
+                                <p>PAGES</p>
+                                <p><i class="fa fa-angle-down"></i></p>
+                            </div>
+                        </a>
+                        <div id="sub-menu">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="../../Nguyen_Dinh_Huan/Home.html">- Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="./charts.html">- Charts</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Charts Details/ChartsDetails.html">- Charts Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Podcarts/podcarts.html">- Podcast</a>
+                                    </li>
+                                    <li>
+                                        <a href="../PodcartsDetails/PodcartsDetail.html">- Podcast Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../Nguyen_Dinh_Huan/Show.html">- Show</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../Ha_Van_Phong/events/index.html">- Event</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../Ha_Van_Phong/blog/index.html">- Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="../BlogDetails/BlogDetails.html">- Blog Details</a>
+                                    </li>
+                                    <li id="sub2">
+                                        <a href="#">
+                                            <div class="div__li">
+                                                <p>
+                                                    - Dropdown
+                                                </p> 
+                                                <p>
+                                                    <i class="fa fa-chevron-right"></i>
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div id="sub-menu2">
+                                            <nav>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">- Dropdown Item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">- Dropdown Item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">- Dropdown Item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">- Dropdown Item</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../../Nguyen_Dinh_Huan/Show.html">SHOWS</a>
+                    </li>
+                    <li>
+                        <a href="./charts.html">CHARTS</a>
+                    </li>
+                    <li>
+                        <a href="../Podcarts/podcarts.html">PODCASTS</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="text-icon">
+                                <p>MEGA</p>
+                                <p><i class="fa fa-angle-down"></i></p>
+                            </div>
+                        </a>
+                        <div class="sub-menu2b">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">- Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Charts/charts.html">- Charts</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Charts Details/ChartsDetails.html">- Charts Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Podcarts/podcarts.html">- Podcast</a>
+                                    </li>
+                                    <li>
+                                        <a href="../PodcartsDetails/PodcartsDetail.html">- Podcast Details</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">- Show</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Event</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="../BlogDetails/BlogDetails.html">- Blog Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Home</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <ul>
+                                    <ul>
+                                        <li>
+                                            <a href="../Charts/charts.html">- Charts</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Charts Details/ChartsDetails.html">- Charts Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="../Podcarts/podcarts.html">- Podcast</a>
+                                        </li>
+                                        <li>
+                                            <a href="../PodcartsDetails/PodcartsDetail.html">- Podcast Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="../../Nguyen_Dinh_Huan/Show.html">- Show</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">- Show</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Event</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="../BlogDetails/BlogDetails.html">- Blog Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Home</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../../Ha_Van_Phong/events/index.html">EVENTS</a>
+                    </li>
+                    <li>
+                        <a href="../../Ha_Van_Phong/blog/index.html">BLOG</a>
+                    </li>
+                    <li class="header__icon">
+                        <a href="#">
+                            <i class="fa fa-share-alt"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content1" style="background-image: url('x11.jpg.pagespeed.ic.fefqz8h91k.webp'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
+            <div class="container_content1">
+                <div class="text">
+                    <h5>Podcast Features</h5>
+                    <h1>Guess what we’ve missed watching world cup 2014. We made a list!</h1>
+                    <div class="text_icon">
+                        <div class="icon">
+                            <i class="fa fa-calendar-alt"></i>
+                            <span>July 23, 2019</span>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-clock"></i>
+                            <span>36 min</span>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-heart"></i>
+                            <span>38</span>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-comments"></i>
+                            <span>23</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg">
+                    <img src="itunes.png" alt="">
+                </div>
+                
+            </div>
+            <div class="audio-player-area">
+                <div class="audioplayer-playpause">
+                  <i class="fa fa-play fa1"></i>
+                </div>
+                <div class="audioplayer-time time-current">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="slider-handle">
+                <div class="audioplayer-time time-duration">00:00</div>
+                <div class="audioplayer-volume">
+                  <i class="fa fa-volume-up"></i>
+                </div>
+                <input type="range" min="1" max="100" value="100" class="slider-volume">
+              </div>
+        </div>
+        <div class="content2">
+            <h1>LATEST ON PODCAST:</h1>
+            <div class="container_img">
+                <div class="box_img">
+                    <div class="box">
+                        <div class="img"><img src="69.jpg" alt=""></div>
+                        <div class="icon">
+                            <div class="icon1">
+                                <i class="fa fa-calendar-alt"></i>
+                                <span>July 23, 2014</span>
+                            </div>
+                            <div class="icon2">
+                                <i class="fa fa-clock"></i>
+                                <span>36 min</span>
+                            </div>
+                        </div>
+                        <div class="box_text">
+                            <h3>Richard Harman from Polit joins us.</h3>
+                        </div>
+                        <hr>
+                        <div class="button">
+                            <span>PLAYING NOW</span>
+                            <i class="fa fa-download"></i>
+                        </div>
+                        <div class="heart">
+                            <div class="heart1">
+                                <span>2</span>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="heart2">
+                                <span>2</span>
+                                <i class="fa fa-comments"></i>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="box">
+                        <div class="img"><img src="71.jpg" alt=""></div>
+                        <div class="icon">
+                            <div class="icon1">
+                                <i class="fa fa-calendar-alt"></i>
+                                <span>July 23, 2014</span>
+                            </div>
+                            <div class="icon2">
+                                <i class="fa fa-clock"></i>
+                                <span>36 min</span>
+                            </div>
+                        </div>
+                        <div class="box_text">
+                            <h3>Richard Harman from Polit joins us.</h3>
+                        </div>
+                        <hr>
+                        <div class="button">
+                            <span>PLAYING NOW</span>
+                            <i class="fa fa-download"></i>
+                        </div>
+                        <div class="heart">
+                            <div class="heart1">
+                                <span>2</span>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="heart2">
+                                <span>2</span>
+                                <i class="fa fa-comments"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="img"><img src="72.jpg" alt=""></div>
+                        <div class="icon">
+                            <div class="icon1">
+                                <i class="fa fa-calendar-alt"></i>
+                                <span>July 23, 2014</span>
+                            </div>
+                            <div class="icon2">
+                                <i class="fa fa-clock"></i>
+                                <span>36 min</span>
+                            </div>
+                        </div>
+                        <div class="box_text">
+                            <h3>Richard Harman from Polit joins us.</h3>
+                        </div>
+                        <hr>
+                        <div class="button">
+                            <span>PLAYING NOW</span>
+                            <i class="fa fa-download"></i>
+                        </div>
+                        <div class="heart">
+                            <div class="heart1">
+                                <span>2</span>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="heart2">
+                                <span>2</span>
+                                <i class="fa fa-comments"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="img"><img src="73.jpg" alt=""></div>
+                        <div class="icon">
+                            <div class="icon1">
+                                <i class="fa fa-calendar-alt"></i>
+                                <span>July 23, 2014</span>
+                            </div>
+                            <div class="icon2">
+                                <i class="fa fa-clock"></i>
+                                <span>36 min</span>
+                            </div>
+                        </div>
+                        <div class="box_text">
+                            <h3>Richard Harman from Polit joins us.</h3>
+                        </div>
+                        <hr>
+                        <div class="button">
+                            <span>PLAYING NOW</span>
+                            <i class="fa fa-download"></i>
+                        </div>
+                        <div class="heart">
+                            <div class="heart1">
+                                <span>2</span>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="heart2">
+                                <span>2</span>
+                                <i class="fa fa-comments"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="img"><img src="74.jpg" alt=""></div>
+                        <div class="icon">
+                            <div class="icon1">
+                                <i class="fa fa-calendar-alt"></i>
+                                <span>July 23, 2014</span>
+                            </div>
+                            <div class="icon2">
+                                <i class="fa fa-clock"></i>
+                                <span>36 min</span>
+                            </div>
+                        </div>
+                        <div class="box_text">
+                            <h3>Richard Harman from Polit joins us.</h3>
+                        </div>
+                        <hr>
+                        <div class="button">
+                            <span>PLAYING NOW</span>
+                            <i class="fa fa-download"></i>
+                        </div>
+                        <div class="heart">
+                            <div class="heart1">
+                                <span>2</span>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="heart2">
+                                <span>2</span>
+                                <i class="fa fa-comments"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="img"><img src="75.jpg" alt=""></div>
+                        <div class="icon">
+                            <div class="icon1">
+                                <i class="fa fa-calendar-alt"></i>
+                                <span>July 23, 2014</span>
+                            </div>
+                            <div class="icon2">
+                                <i class="fa fa-clock"></i>
+                                <span>36 min</span>
+                            </div>
+                        </div>
+                        <div class="box_text">
+                            <h3>Richard Harman from Polit joins us.</h3>
+                        </div>
+                        <hr>
+                        <div class="button">
+                            <span>PLAYING NOW</span>
+                            <i class="fa fa-download"></i>
+                        </div>
+                        <div class="heart">
+                            <div class="heart1">
+                                <span>2</span>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="heart2">
+                                <span>2</span>
+                                <i class="fa fa-comments"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="img"><img src="76.jpg" alt=""></div>
+                        <div class="icon">
+                            <div class="icon1">
+                                <i class="fa fa-calendar-alt"></i>
+                                <span>July 23, 2014</span>
+                            </div>
+                            <div class="icon2">
+                                <i class="fa fa-clock"></i>
+                                <span>36 min</span>
+                            </div>
+                        </div>
+                        <div class="box_text">
+                            <h3>Richard Harman from Polit joins us.</h3>
+                        </div>
+                        <hr>
+                        <div class="button">
+                            <span>PLAYING NOW</span>
+                            <i class="fa fa-download"></i>
+                        </div>
+                        <div class="heart">
+                            <div class="heart1">
+                                <span>2</span>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="heart2">
+                                <span>2</span>
+                                <i class="fa fa-comments"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="img"><img src="77.jpg" alt=""></div>
+                        <div class="icon">
+                            <div class="icon1">
+                                <i class="fa fa-calendar-alt"></i>
+                                <span>July 23, 2014</span>
+                            </div>
+                            <div class="icon2">
+                                <i class="fa fa-clock"></i>
+                                <span>36 min</span>
+                            </div>
+                        </div>
+                        <div class="box_text">
+                            <h3>Richard Harman from Polit joins us.</h3>
+                        </div>
+                        <hr>
+                        <div class="button">
+                            <span>PLAYING NOW</span>
+                            <i class="fa fa-download"></i>
+                        </div>
+                        <div class="heart">
+                            <div class="heart1">
+                                <span>2</span>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="heart2">
+                                <span>2</span>
+                                <i class="fa fa-comments"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span"> <span class="more"> VIEW MORE </span></div>
+        </div>
+    </div>
+    <hr style="opacity: 0.4;">
+    <div class="footer" id="footer">
+      <div class="content1">
+          <img src="logo2.png" alt="">
+          <p>Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="infor">
+              <i class="fa fa-map-marker-alt"></i>
+              <div class="infor-text">24 No. Amazing Valley, Aewsome St. New York, USA</div>
+          </div>
+          <div class="infor">
+              <i class="fa fa-phone"></i>
+              +11 123 4567890
+          </div>
+          <div class="infor">
+              <i class="fa fa-envelope"></i>
+              info.colorlib@gmail.com
+          </div>
+      </div>
+      <div class="content2">
+          <h4>Twitter Feed</h4>
+          <div class="text">
+              <i class="fab fa-twitter"></i>
+              <div class="text-content">
+                  <span>Kerem Suer</span> @kerem American conducts it first ever done strike Qaeda                </div>
+              </div>
+          <div class="text">
+              <i class="fab fa-twitter"></i>
+              <div class="text-content">
+                  <span>Axel Hervelle</span> @axel_hervelle Tens of thousands attend rallies held in D.C.
+              </div>
+          </div>
+          <div class="text">
+              <i class="fab fa-twitter"></i>
+              <div class="text-content">
+                  <span>Chris Pratt</span> @chris_pratt Hundreds of protesters shut down meeting.
+              </div>
+          </div>
+      </div>
+      <div class="content3">
+          <h4>Instagram</h4>
+          <div class="box">
+              <img src="2.jpg" alt="">
+              <img src="3.jpg" alt="">
+              <img src="4.jpg" alt="">
+          </div>
+          <div class="box">
+              <img src="5.jpg" alt="">
+              <img src="6.jpg" alt="">
+              <img src="2.jpg" alt="">
+          </div>
+          <div class="box">
+              <img src="4.jpg" alt="">
+              <img src="9.jpg" alt="">
+              <img src="10.jpg" alt="">
+          </div>
+      </div>
+  </div>
+  <div class="footer-end">
+      <hr>
+     <div class="icon">
+      <a href="#top"><i class="fa fa-arrow-alt-circle-up"></i></a>
+     </div>
+     <br><br>
+     <p>HIT with luv <i class="fa fa-heart"></i></p>
+  </div>
+    <script src="audio.js"></script>
+</body>
+</html>

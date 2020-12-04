@@ -1,0 +1,86 @@
+@import 'variables';
+
+
+.blog-trend {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 85%;
+    flex-direction: row;
+    margin: auto;
+    .blog {
+        width: 65%;
+    }
+
+    .trend {
+        width: 32%;
+    }
+
+    .title-block-trend {
+        @include title-block-trend;
+    }
+    .box-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .box-big {
+            background-image: url(../images/bg/11.jpg);
+            background-repeat: no-repeat;
+            background-size: 120%;
+            background-position: center;
+            width: 100%;
+            height: 70vh;
+            position: relative;
+            line-height: 3.5vw;
+            transition: .6s;
+            border-radius: 5px;
+            overflow: hidden;
+            &:hover {
+                background-position-y: 20%;
+            }
+            .text {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                padding-left: 5%;
+                background-color: rgba(2, 2, 2, 0.774);
+                top: 0;
+                left: 0;
+                h1 {
+                    font-size: 2.2vw;
+                    width: 95%;
+                }
+                p {
+                    margin-top: 35%;
+                }
+                @include aHover;
+            }
+            img {
+                @include size-img;
+                display: none;
+            }
+        }
+        @include box-child;
+
+        .box-big-trend {
+            background-image: url(../images/bg/12.jpg);
+            height: 30vh;
+            .text {
+                h1 {
+                    font-size: 1.4vw;
+                    width: 95%;
+                }
+                p {
+                    margin-top: 20%;
+                }
+                @include aHover;
+            }
+        }
+    }
+    .box-container-trend {
+        .box-child {
+            width: 100%;
+        }
+    }
+}

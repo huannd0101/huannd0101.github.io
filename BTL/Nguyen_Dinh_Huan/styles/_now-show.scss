@@ -1,0 +1,198 @@
+@import 'variables';
+.now-show {
+    display: none;
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    .img {
+        width: 100%;
+        height: 100%;
+        background-attachment: fixed;
+        background: url(../images/bg/54.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+    }
+
+    .text {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        p {
+            font-size: 1.8vw;
+        }
+        h1 {
+            font-size: 3vw;
+            padding: 20px 0 15px 0;
+        }
+    }
+}
+
+
+.time-table {
+    width: 80%;
+    margin: auto !important;
+    padding-top: 100px;
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            li {
+                font-size: 24px;
+                width: 14%;
+                text-align: center;
+                cursor: pointer;
+                p {
+                    padding-bottom: 15px;
+                }
+                span {
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $grayLight;
+                }
+            }
+            .active {
+                color: $colorHover;
+                span {
+                    background-color: $colorHover;
+                }
+            }
+        }
+    .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .itemBox {
+            position: relative;
+            width: 31.5%;
+            margin-bottom: 30px;
+            height: 183px;
+
+            overflow: hidden;
+            border-radius: 5px;
+            
+            img {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                transition: .5s;
+            }
+            .text-center {
+                position: absolute;   
+                text-align: center;
+                width: 100%; 
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.582);
+                transition: 1s;
+                h5 {
+                    font-size: larger;
+                }
+            }
+            
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                    transition: .5s;
+                }
+                .text-center {
+                    background-color: $colorHover;
+                }
+            }
+        }
+        .monday{
+            background-color: blue;
+        }
+        .tuesday{
+            background-color: red;
+        }
+        .webnesday{
+            background-color: green;
+        }
+        .thirsday{
+            background-color: yellow;
+        }
+        .friday{
+            background-color: gray;
+        }
+        .saturday{
+            background-color: pink;
+        }
+    }
+}
+// .itemBox {
+//     width: 30%;
+//     height: 100px;
+// }
+// .monday{
+//     background-color: blue;
+// }
+// .tuesday{
+//     background-color: red;
+// }
+// .webnesday{
+//     background-color: green;
+// }
+// .thirsday{
+//     background-color: yellow;
+// }
+// .friday{
+//     background-color: gray;
+// }
+// .saturday{
+//     background-color: pink;
+// }
+/*
+.gallery {
+    padding: 20px;
+    width: 1280px;
+    margin: 40px auto;
+}
+.gallery ul {
+    display: flex;
+    margin-bottom: 10px;
+}
+.gallery ul li {
+    list-style: none;
+    background-color: #eee;
+    padding: 2px 20px;
+    margin: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.gallery ul li.active {
+    background-color: #03a9f4;
+    color: #fff;
+}
+.product {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product .itemBox{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+}
+.product .itemBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+*/

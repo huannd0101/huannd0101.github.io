@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nguyễn Đình Huân">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Show</title>
+    <script src="./js/js.js"></script>
+</head>
+<body>
+    <div id="firstPage"></div>
+    <div class="menu" id="menu-left">
+        <div class="icon-remove">
+            <i class="fa fa-remove" id="idRemove2" onclick="myF2()"></i>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="Home.html">HOME</a>
+                </li>
+                <li id="sub1">
+                    <a href="#">
+                        <div class="text-icon">
+                            <p>PAGES</p>
+                            <p><i class="fa fa-angle-down"></i></p>
+                        </div>
+                    </a>
+                    <div id="sub-menu">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">- Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Charts</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Charts Details</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Podcast</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Podcast Details</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Show</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Event</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Blog Details</a>
+                                </li>
+                                <li id="sub2">
+                                    <a href="#">
+                                        <div class="div__li">
+                                            <p>
+                                                - Dropdown
+                                            </p> 
+                                            <p>
+                                                <i class="fa fa-chevron-right"></i>
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <div id="sub-menu2">
+                                        <nav>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">- Dropdown Item</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">- Dropdown Item</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">- Dropdown Item</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">- Dropdown Item</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">SHOWS</a>
+                </li>
+                <li>
+                    <a href="#">CHARTS</a>
+                </li>
+                <li>
+                    <a href="#">PODCASTS</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="text-icon">
+                            <p>MEGA</p>
+                            <p><i class="fa fa-angle-down"></i></p>
+                        </div>
+                    </a>
+                    <div class="sub-menu2b">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">- Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Charts</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Charts Details</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Podcast</a>
+                                </li>
+                                <li>
+                                    <a href="#">- Podcast Details</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">- Show</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Event</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Blog Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Home</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                            <ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">- Charts</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Charts Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Podcast</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Podcast Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Show</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                            <ul>
+                                <ul>
+                                    <li>
+                                        <a href="#">- Show</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Event</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Blog Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Home</a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </nav>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">EVENTS</a>
+                </li>
+                <li>
+                    <a href="#">BLOCK</a>
+                </li>
+                <li class="header__icon">
+                    <a href="#">
+                        <i class="fa fa-share-alt"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <header id="header">
+        <div class="logo">
+            <a href="Home.html">
+                <img src="./images/logo.png" alt="This is logo">
+            </a>
+        </div>
+        <div class="icon-menu" id="iconMenu" onclick="myF1()">
+            <i class="fa fa-bars" id="idBars"></i>
+            <i class="fa fa-remove" id="idRemove"></i>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="Home.html">HOME</a>
+                    </li>
+                    <li id="sub1">
+                        <a href="#">
+                            <div class="text-icon">
+                                <p>PAGES</p>
+                                <p><i class="fa fa-angle-down"></i></p>
+                            </div>
+                        </a>
+                        <div id="sub-menu">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="Home.html">- Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="Chart.html">- Charts</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Nguyen_Thi_Thanh_Tinh/Charts Details/ChartsDetails.html">- Charts Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Nguyen_Thi_Thanh_Tinh/Podcarts/podcarts.html">- Podcast</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Nguyen_Thi_Thanh_Tinh/PodcartsDetails/PodcartsDetail.html">- Podcast Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="Show.html">- Show</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Ha_Van_Phong/blog/index.html">- Event</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Ha_Van_Phong/events/index.html">- Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="../Nguyen_Thi_Thanh_Tinh/BlogDetails/BlogDetails.html">- Blog Details</a>
+                                    </li>
+                                    <li id="sub2">
+                                        <a href="#">
+                                            <div class="div__li">
+                                                <p>
+                                                    - Dropdown
+                                                </p> 
+                                                <p>
+                                                    <i class="fa fa-chevron-right"></i>
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div id="sub-menu2">
+                                            <nav>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">- Dropdown Item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">- Dropdown Item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">- Dropdown Item</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">- Dropdown Item</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="Show.html">SHOWS</a>
+                    </li>
+                    <li>
+                        <a href="Chart.html">CHARTS</a>
+                    </li>
+                    <li>
+                        <a href="../Nguyen_Thi_Thanh_Tinh/Podcarts/podcarts.html">PODCASTS</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="text-icon">
+                                <p>MEGA</p>
+                                <p><i class="fa fa-angle-down"></i></p>
+                            </div>
+                        </a>
+                        <div class="sub-menu2b">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">- Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Charts</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Charts Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Podcast</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">- Podcast Details</a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">- Show</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Event</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Blog Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Home</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">- Charts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Charts Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Podcast</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Podcast Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Show</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                                <ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">- Show</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Event</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Blog Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">- Home</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../Ha_Van_Phong/events/index.html">EVENTS</a>
+                    </li>
+                    <li>
+                        <a href="../Ha_Van_Phong/blog/index.html">BLOCK</a>
+                    </li>
+                    <li class="header__icon">
+                        <a href="#">
+                            <i class="fa fa-share-alt"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="now-show">
+        <div class="img"></div>
+        <div class="text">
+            <p>The now show on radio 4</p>
+            <h1>Andrew Peach Birthday Surprise!</h1>
+            <p class="time">Tuesday (09:00am - 11:30am)</p>
+        </div>
+    </section>
+
+    <section class="time-table">
+        <ul>
+            <li class="list active" data-filter="monday"><p>MONDAY</p> <span></span></li>
+            <li class="list" data-filter="tuesday"><p>TUESDAY</p> <span></span></li>
+            <li class="list" data-filter="webnesday"><p>WEDNESDAY</p> <span></span></li>
+            <li class="list" data-filter="thirsday"><p>THIRSDAY</p> <span></span></li>
+            <li class="list" data-filter="friday"><p>FRIDAY</p> <span></span></li>
+            <li class="list" data-filter="saturday"><p>SATURDAY</p> <span></span></li>
+        </ul>
+        <div class="box">
+            <div class="itemBox friday">
+                <img src="./images/bg/55.jpg" alt="">
+                <div class="text-center">
+                    <span>01:00am - 02:30am</span>
+                    <h5>BBC Music Introducing in</h5>
+                </div>
+            </div>
+            <div class="itemBox tuesday">
+                <img src="./images/bg/56.jpg" alt="">
+                <div class="text-center">
+                    <span>03:00am - 05:30am</span>
+                    <h5>As BBC Radio 5 live</h5>
+                </div>
+            </div>
+            <div class="itemBox saturday">
+                <img src="./images/bg/57.jpg" alt="">
+                <div class="text-center">
+                    <span>06:00am - 07:30am</span>
+                    <h5>Andrew Peach Birthday Surprise!</h5>
+                </div>
+            </div>
+            <div class="itemBox monday">
+                <img src="./images/bg/58.jpg" alt="">
+                <div class="text-center">
+                    <span>09:00am - 11:30am</span>
+                    <h5>Berkshire Sport: Extra Time</h5>
+                </div>
+            </div>
+            <div class="itemBox webnesday">
+                <img src="./images/bg/59.jpg" alt="">
+                <div class="text-center">
+                    <span>12:00pm - 13:30pm</span>
+                    <h5>Tony Blackburn on BBC Radio</h5>
+                </div>
+            </div>
+            <div class="itemBox thirsday">
+                <img src="./images/bg/60.jpg" alt="">
+                <div class="text-center">
+                    <span>15:00am - 17:00pm</span>
+                    <h5>BBC Music Introducing in</h5>
+                </div>
+            </div>
+            <div class="itemBox monday">
+                <img src="./images/bg/61.jpg" alt="">
+                <div class="text-center">
+                    <span>18:00pm - 19:30pm</span>
+                    <h5>Stereo Underground</h5>
+                </div>
+            </div>
+            <div class="itemBox friday">
+                <img src="./images/bg/62.jpg" alt="">
+                <div class="text-center">
+                    <span>20:00pm - 22:00pm</span>
+                    <h5>Danyl Johnson and Natasha Watts</h5>
+                </div>
+            </div>
+            <div class="itemBox tuesday">
+                <img src="./images/bg/63.jpg" alt="">
+                <div class="text-center">
+                    <span>23:00pm - 01:00am</span>
+                    <h5>Andrew Peach Birthday Surprise!</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer >
+        <div class="footer" >
+            <div class="zazo">
+                <h1>
+                    <a href="#">
+                        <img src="./images/bg/logo2.png" alt="">
+                    </a>
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p>
+                    <i class="fa fa-map-marker"></i>
+                    24 No. Amazing Valley, Aewsome St. New York, USA
+                </p>
+                <p>
+                    <i class="fa fa-phone"></i>
+                    +84 375417808
+                </p>
+                <p>
+                    <i class="fa fa-envelope"></i>
+                    huannd0101@gmail.com
+                </p>
+            </div>
+            <div class="twitter-feed">
+                <h1>Twitter Feed</h1>
+                <p>
+                    <i class="fa fa-twitter"></i>
+                    <a href="#">Kerem Suer</a>
+                    <span>@kerem American conducts it first ever done strike Qaeda</span>
+                </p>
+                <p>
+                    <i class="fa fa-twitter"></i>
+                    <a href="#">Axel Hervelle</a>
+                    <span>@axel_hervelle Tens of thousands attend rallies held in D.C.</span>
+                </p>
+                <p>
+                    <i class="fa fa-twitter"></i>
+                    <a href="#">Chris Pratt </a>
+                    <span>@chris_pratt Hundreds of protesters shut down meeting.</span>
+                </p>
+            </div>
+            <div class="instagram">
+                <h1>Instagram</h1>
+                <div class="instagram__box-img">
+                    <div class="box">
+                        <a href="#">
+                            <img src="./images/bg/2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <img src="./images/bg/3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <img src="./images/bg/4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <img src="./images/bg/5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <img src="./images/bg/6.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <img src="./images/bg/7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <img src="./images/bg/8.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <img src="./images/bg/9.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="box">
+                        <a href="#">
+                            <img src="./images/bg/10.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text">
+            <a href="#firstPage"><i class="fa fa-arrow-circle-up"></i></a>
+            
+            <p>Copyright ©2020 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Colorlib</p>
+        </div>
+    </footer>
+
+</body>

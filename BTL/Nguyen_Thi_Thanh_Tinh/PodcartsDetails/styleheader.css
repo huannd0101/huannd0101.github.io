@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+body header .logo {
+  width: 30%;
+}
+
+body header .logo a img {
+  padding: 20px 0;
+  display: block;
+  margin-left: 100px;
+}
+
+body header .icon-menu {
+  position: relative;
+  display: none;
+  color: white;
+  font-size: 30px;
+  padding: 20px 10px;
+}
+
+body header .icon-menu .fa-bars {
+  position: absolute;
+}
+
+body header .icon-menu .fa-remove {
+  position: absolute;
+  display: none;
+}
+
+body header .menu {
+  width: 70%;
+  padding: 30px 0;
+}
+
+body header .menu nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .menu nav ul > li {
+  padding: 0 1.5%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body header .menu nav ul > li a {
+  color: white;
+  font-weight: 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body header .menu nav ul > li a:hover {
+  color: #DD2379;
+}
+
+body header .menu nav ul > li a .text-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body header .menu nav ul > li a .text-icon .fa-angle-down {
+  padding-left: 3px;
+}
+
+body header .menu nav ul > li .fa-angle-down,
+body header .menu nav ul > li .fa-chevron-right {
+  color: #DD2379;
+}
+
+body header .menu nav ul > li .fa-share-alt {
+  padding: 0 30px 0 10px;
+}
+
+body header .menu nav ul > li:hover #sub-menu {
+  display: block;
+}
+
+body header .menu nav ul > li:hover .sub-menu2b {
+  display: block;
+  top: 100%;
+}
+
+body header .menu nav ul .header__icon {
+  margin-left: 3%;
+}
+
+body header .menu nav ul #sub-menu {
+  position: absolute;
+  width: 200px;
+  border-radius: 10px;
+  background-color: white;
+  display: none;
+}
+
+body header .menu nav ul #sub-menu nav > ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body header .menu nav ul #sub-menu nav > ul > li {
+  position: relative;
+  padding: 12px 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body header .menu nav ul #sub-menu nav > ul > li a {
+  color: black;
+}
+
+body header .menu nav ul #sub-menu nav > ul > li:hover > a {
+  margin-left: 10px;
+  color: #DD2379;
+}
+
+body header .menu nav ul #sub-menu nav > ul > li #sub-menu2 {
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  display: none;
+}
+
+body header .menu nav ul #sub-menu nav > ul > li #sub-menu2 nav ul li {
+  padding: 12px 20px;
+}
+
+body header .menu nav ul #sub-menu nav > ul > li:hover #sub-menu2 {
+  display: block;
+}
+
+body header .menu nav ul #sub-menu nav > ul .div__li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body header .menu nav ul .sub-menu2b {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+body header .menu nav ul .sub-menu2b nav {
+  margin: 15px 0 15px 3%;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .menu nav ul .sub-menu2b nav ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+body header .menu nav ul .sub-menu2b nav ul li {
+  padding: 10px;
+}
+
+body header .menu nav ul .sub-menu2b nav ul li a {
+  color: black;
+}
+
+body header .menu nav ul .sub-menu2b nav ul li a:hover {
+  color: #DD2379;
+  margin-left: 10px;
+}
+
+@media (max-width: 991px) {
+  body header .icon-menu {
+    display: block;
+    margin-right: 3%;
+  }
+  body header .icon-menu:hover {
+    cursor: pointer;
+  }
+  body header .menu {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styleheader.css.map */

@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body .container .content1 .container_content1 {
+  background-color: rgba(0, 0, 0, 0.692);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 120px 120px;
+  color: white;
+}
+
+body .container .content1 .container_content1 .text {
+  margin-left: 50px;
+}
+
+body .container .content1 .container_content1 .text h1 {
+  font-size: 45px;
+  padding-bottom: 30px;
+}
+
+body .container .content1 .container_content1 .text p {
+  font-size: 19px;
+}
+
+body .container .content1 .container_content1 .text .app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .content1 .container_content1 .text .app img {
+  margin-right: 10px;
+}
+
+body .container .content2 {
+  margin: 100px;
+}
+
+body .container .content2 .music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 3%;
+  padding: 15px 30px;
+}
+
+body .container .content2 .music .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .content2 .music .left .music_text1 {
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+body .container .content2 .music .left .icon {
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+body .container .content2 .music .left img {
+  border-radius: 5px;
+}
+
+body .container .content2 .music .left .icon:hover {
+  cursor: pointer;
+}
+
+body .container .content2 .music .left .music_text2 {
+  font-size: 18px;
+  font-weight: 550;
+}
+
+body .container .content2 .music .left .music_text2 span:nth-child(2) {
+  color: #A1A1A1;
+}
+
+body .container .content2 .music .right {
+  background-color: #DC2878;
+  color: white;
+  padding: 13px 50px;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body .container .content2 .music:hover {
+  background-color: #F2F4F5;
+}
+
+body .container .content2 .right:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+body .container .content3 .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 130px;
+}
+
+body .container .content3 .text p:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+body .container .content3 .container_img {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding-left: 9%;
+}
+
+body .container .content3 .container_img .block_img {
+  border-radius: 5px;
+  margin: 15px 15px;
+  width: 28%;
+  height: 200px;
+  overflow: hidden;
+}
+
+body .container .content3 .container_img .block_img .img {
+  border-radius: 5px;
+  height: 100%;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}
+
+body .container .content3 .container_img .block_img .img .img_in {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.788);
+}
+
+body .container .content3 .container_img .block_img .img .img_in .text_content p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+body .container .content3 .container_img .block_img .img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .container .content3 .container_img .block_img .img:hover .img_in {
+  opacity: 0.7;
+}
+
+@media (max-width: 853px) {
+  body .container .content1 .container_content1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .container .content1 .container_content1 .img {
+    margin-bottom: 100px;
+  }
+  body .container .content2 .music {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .container .content2 .music .left img {
+    width: 15%;
+  }
+  body .container .content2 .music .left .music_text2 {
+    font-size: 15px;
+  }
+  body .container .content2 .music .right {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  body .container .content3 .text h1 {
+    font-size: 25px;
+  }
+  body .container .content3 .text p {
+    font-size: 15px;
+  }
+  body .container .content3 .container_img {
+    width: 100%;
+  }
+  body .container .content3 .container_img .block_img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  body .container .content3 .container_img {
+    width: 100%;
+  }
+  body .container .content3 .container_img .block_img {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=style2.css.map */

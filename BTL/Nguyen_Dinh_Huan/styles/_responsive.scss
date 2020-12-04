@@ -1,0 +1,229 @@
+@media screen and (max-width: 990px){
+    header {
+        justify-content: space-between;
+
+        .menu {
+            display: none;
+        }
+        .logo {
+            padding-bottom: 20px;
+        }
+        .icon-menu {
+            display: block;
+            margin-right: 20px;
+        }
+    }
+    #menu-left {
+        position: fixed;
+    }
+    .time-table {
+        .box {
+            .itemBox {
+                width: 47% !important;
+            }
+        }
+        ul {
+            li {
+                font-size: 18px !important;
+            }
+        }
+    }
+
+    .box-zazo {
+        .box-big2 {
+            .box-child {
+                height: 20vw !important;
+                width: 47% !important; 
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .blog-trend {
+        flex-direction: column;
+        
+    }
+    .blog {
+        width: 85% !important;
+        margin: auto;
+    }
+
+    .trend {
+        width: 85% !important;
+        margin: auto;
+    }
+
+    .music-chart {
+        &__content {
+            .box-big {
+                .box {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    .box__title {
+                        width: 100%;
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                    .box__btn {
+                        margin-top: 10px;
+                        a {
+                            // width: 100%;
+                            padding: 10px 32.5vw !important;
+                            // display: block;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .radio-music {
+        &__content {
+            flex-direction: column;
+            .content--img {
+                width: 100% !important;
+            }
+            .content--text {
+                width: 100% !important;
+                padding-bottom: 60px;
+            }
+        }
+    }
+
+    .weekly-sehedule {
+        .schedule {
+            .box {
+                font-size: 13px !important;
+            }
+        }
+    }
+
+    .footer {
+        width: 85% !important;
+        .zazo {
+            width: 50% !important;
+        }
+        .twitter-feed {
+            width: 50% !important;
+        }
+        .instagram {
+            width: 85% !important;
+            height: 525px;
+            margin: auto !important;
+            &__box-img {
+                margin: auto;
+                // height: 525px;
+                width: 100% !important;
+                .box {
+                    width: 160px !important;
+                    height: 160px !important;
+                    img {
+                        width: 100% !important;
+                        height: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+    .time-table {
+        .box {
+            .itemBox {
+                width: 100% !important;
+            }
+        }
+        ul {
+            li {
+                font-size: 10px !important;
+            }
+        }
+    }
+
+    .box-zazo {
+        .box-big2 {
+            .box-child {
+                height: 35vw !important;
+                width: 80% !important; 
+                margin: auto !important;
+                margin-bottom: 20px !important;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 576px){
+    .blog-trend {
+        flex-direction: column;
+        width: 95% !important;   
+    }
+    .blog {
+        width: 100% !important;
+        margin: auto;
+    }
+
+    .trend {
+        width: 100% !important;
+        margin: auto;
+    }
+
+    .radio-music {
+        &__content {
+            .content--text {
+                padding-bottom: 40px;
+            }
+        }
+    }
+
+    .weekly-sehedule {
+        .schedule {
+            .box {
+                font-size: 10px !important;
+            }
+        }
+    }
+
+    .footer {
+        width: 85% !important;
+        margin: auto !important;
+        .zazo {
+            width: 100% !important;
+        }
+        .twitter-feed {
+            width: 100% !important;
+        }
+    
+        .instagram {
+            width: 100% !important;
+           
+        }
+        .instagram {
+            &__box-img {
+                margin: auto;
+                // height: 525px;
+                width: 100% !important;
+                .box {
+                    width: 33% !important;
+                    height: 33% !important;
+                    img {
+                        width: 100% !important;
+                        height: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .box-zazo {
+        .box-big2 {
+            .box-child {
+                height: 35vw !important;
+                width: 100% !important; 
+                margin: auto !important;
+                margin-bottom: 20px !important;
+            }
+        }
+    }
+}

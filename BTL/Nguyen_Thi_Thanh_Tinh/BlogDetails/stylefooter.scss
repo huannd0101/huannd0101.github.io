@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+$colorHover:#DD2379;
+$colortext:#6e6e6e;
+body{
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 10px 10%;
+    .content1{
+        width: 30%;
+        img{
+            margin: 30px 0;
+        }
+        p{
+            font-size: 18px;
+            line-height: 30px;
+            color:$colortext;
+            padding-bottom: 30px;
+        }
+        .infor{
+            display: flex;
+            padding-bottom: 20px;
+            font-size: 18px;
+            line-height: 30px;
+            i{
+                color: $colorHover;
+                margin-right: 20px;
+                font-size: 25px;
+            }
+
+        }
+    }
+    .content2{
+        width: 30%;
+        h4{
+            font-size: 30px;
+            padding: 20px 0;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 400;
+        }
+        .text{
+            display: flex;
+            padding: 20px 0;
+            i{
+                color: $colorHover;
+                font-size: 20px;
+                padding-right: 20px;
+                padding-top: 10px;
+            }
+            .text-content{
+                color: $colortext;
+                font-size: 18px;
+                line-height: 30px;
+                span{
+                    color: black;
+                    &:hover{
+                        color: $colorHover;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .content3{
+        //padding-left: 30px;
+        h4{
+            font-size: 30px;
+            padding: 20px 0;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 400;
+        }
+        .box{
+            width: 30%;
+            display: flex;
+            img{
+                width: 80%;
+                padding: 10px 10px;
+                transition: 0.5s ease-in-out;
+                &:hover{
+                    transform: scale(1.2);
+                    transition-duration: 500ms;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+    .footer-end{
+        position: relative;
+        hr{
+           opacity: 0.2;
+            width: 80%;
+            margin-left: 10%;
+        }
+        a{
+            i{
+                position: absolute;
+                top: -25px;
+                left: 47.5%;
+                font-size: 50px;
+                color: $colorHover;
+                z-index: 999999;
+                &:hover{
+                    color: black;
+                    transition-duration: 500ms;
+                }
+            }
+        }
+        p{
+            text-align: center;
+            font-size: 25px;
+            color: $colorHover;
+            &:hover{
+                color: red;
+                cursor: pointer;
+            }
+            padding-bottom: 20px;
+        }
+    }
+}
+@media(min-width:768px){
+    body{
+        .footer{
+            width: 100%;
+            display: flex;
+            flex-wrap:nowrap;
+        }
+    }
+}
+@media(max-width:767px){
+    body{
+        .footer{
+            width: 100%;
+            .content1{
+                width: 40%;
+            }
+            .content2{
+                width: 40%;
+            }
+            .content3{
+                padding: 0 10%;
+                .box{
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:575px){
+    body{
+        .footer{
+            .content1{
+                width: 100%;
+            }
+            .content2{
+                width: 100%;
+            }
+            .content3{
+                width: 100%;
+            }
+        }
+    }
+}
