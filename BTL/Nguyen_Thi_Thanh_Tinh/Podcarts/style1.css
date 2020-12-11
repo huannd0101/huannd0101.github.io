@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   font-family: "Open Sans", sans-serif;
@@ -334,7 +338,7 @@ body .container .content2 .span .more {
   background-color: #dc2878;
   font-size: 17px;
   border-radius: 5px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 body .container .content2 .more:hover {

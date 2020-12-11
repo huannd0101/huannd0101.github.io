@@ -8,6 +8,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body .container .content1 {
   width: 100%;
   text-align: center;

@@ -7,6 +7,9 @@
   font-family: "Open Sans", sans-serif;
 }
 $colorHover: #dc2878;
+html{
+  scroll-behavior: smooth;
+}
 body {
   .container {
     .content1 {
