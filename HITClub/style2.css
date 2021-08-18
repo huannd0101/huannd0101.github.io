@@ -1,0 +1,81 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:rgb(138, 132, 132);
+  }
+  
+  .pimg1, .pimg2, .pimg3{
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+  
+  .pimg1{
+    background-image:url('https://scontent.fhph1-2.fna.fbcdn.net/v/t39.30808-6/208671703_4383843915010449_4795670590200628467_n.png?_nc_cat=106&_nc_rgb565=1&ccb=1-5&_nc_sid=8631f5&_nc_ohc=UUlqh85j60IAX_YjmZs&_nc_ht=scontent.fhph1-2.fna&oh=d5194b65619b5b2024d6eca1fef1857b&oe=611FEAEA');
+    min-height:100%;
+  }
+  
+  .pimg2{
+    background-image:url('https://scontent.fhph1-1.fna.fbcdn.net/v/t1.6435-9/163558440_794932051134800_4255180007704514593_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=825194&_nc_ohc=P2_0XBsMn-0AX8LdP7U&_nc_ht=scontent.fhph1-1.fna&oh=fb4a64fa78aa0cba9fc64e266c8b11b5&oe=6140D051');
+    min-height:400px;
+  }
+  
+  .pimg3{
+    background-image:url('https://scontent-hkt1-2.xx.fbcdn.net/v/t1.6435-9/s1080x2048/167954089_799076067387065_1116904057339102290_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=b9115d&_nc_ohc=L-oJcoQczdIAX9NpTcO&_nc_ht=scontent-hkt1-2.xx&oh=c3ca24094346af5b0c60376b0766be5f&oe=614009CE');
+    min-height:400px;
+  }
+  
+  .section{
+    text-align:center;
+    padding:50px 80px;
+  }
+  
+  .section-light{
+    background-color:#f4f4f4;
+    color:#666;
+  }
+  
+  .section-dark{
+    background-color:#415466;
+    color:#ddd;
+  }
+  
+  .ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+  
+  .ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+  }
+  
+  .ptext .border.trans{
+    background-color:transparent;
+  }
+  
+  @media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+      background-attachment:scroll;
+    }
+  }
+  
