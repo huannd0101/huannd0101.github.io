@@ -1,0 +1,18 @@
+#header {
+	position: unset;
+}
+
+/* Begin: Blog Grid */
+#blog-grid {
+	padding-top: 120px;
+}
+
+.news__item {
+	margin-bottom: 48px;
+}
+
+/* End: Blog Grid */
+
+#contact {
+	padding-top: 170px;
+}

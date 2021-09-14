@@ -1,0 +1,149 @@
+/* Begin: Container */
+#container {
+	background-color: var(--black-color);
+	font-size: 1.6rem;
+	color: var(--text-color);
+}
+
+#container > * {
+	padding-top: 170px;
+	/* erase */
+}
+
+/* Begin: Home */
+
+.home__heading {
+	font-size: 72px;
+	line-height: 76px;
+	color: var(--white-color);
+}
+.home__desc {
+	line-height: 30px;
+	margin-bottom: 48px;
+}
+
+/* End: Home */
+
+/* Begin: Statistical */
+.statistical__item {
+	padding: 48px 0;
+	text-align: center;
+	border-radius: 4px;
+	background-color: var(--blur-color);
+}
+
+.statistical__quantity {
+	font-size: 36px;
+	color: var(--main-color);
+	margin-bottom: 16px;
+}
+
+.statistical__problem {
+	color: var(--white-color);
+}
+/* End: Statistical */
+
+/* Begin: Symptoms */
+.symptoms__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.symptoms__name {
+	width: 40%;
+	margin-bottom: 32px;
+}
+
+.symptoms__name i {
+	color: var(--main-color);
+	font-size: 14px;
+	margin-right: 4px;
+}
+
+/* Begin: Covid spread */
+.spread__card {
+	padding: 16px;
+	text-align: center;
+	border-radius: 4px;
+	background-color: var(--blur-color);
+}
+
+.spread__card:hover {
+	transition: 0.8s ease;
+	-webkit-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+  	transform: rotate(2deg);
+}
+
+.spread__img {
+	width: 128px;
+	height: 128px;
+	object-fit: contain;
+	margin-bottom: 24px;
+}
+
+.spread__info {
+	font-size: 18px;
+	color: var(--white-color);
+}
+
+
+.spread__name {
+	margin-bottom: 24px;
+}
+
+.spread__name i {
+	color: var(--main-color);
+	font-size: 14px;
+	margin-right: 4px;
+}
+/* End: Covid spread */
+
+/* Begin: Covid Prevention */
+.prevention__header {
+	font-size: 24px;
+	margin-bottom: 36px;
+	color: var(--white-color);
+}
+
+.prevention--should .prevention__key {
+	color: var(--main-color);
+}
+
+.prevention--shouldnot .prevention__key {
+	color: #e95030;
+}
+
+.prevention__item {
+	display: flex;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 4px;
+	padding: 24px;
+	margin-bottom: 32px;
+}
+
+.prevention__img {
+	width: 72px;
+	height: 72px;
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 4px;
+	margin-right: 16px;
+}
+
+.prevention__heading {
+	font-size: 18px;
+	margin-bottom: 8px;
+	color: var(--white-color);
+	font-weight: 400;
+}
+
+.prevention__desc {
+	line-height: 1.6;
+}
+/* End: Covid Prevention */
+
+/* End: Container */
+
+
